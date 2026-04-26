@@ -1,10 +1,10 @@
 export const siteConfig = {
-  title: "Your Site",
+  title: "Cougar Claw Robotics",
   description: "Minimal Astro site built with Tailwind CSS and DaisyUI.",
   githubRepo: "aholbreich/astro-tailwind-daisyui-starter",
   // Astro validates these public env vars in astro.config.mjs.
   site: import.meta.env.PUBLIC_SITE_URL,
-  footerText: "Replace this with your company or site name.",
+  footerText: "Cougar Claw Robotics",
 
   // Used in SEOmeta for Twitter card and Open Graph
   seo: {
@@ -27,11 +27,11 @@ export const nav = [
     url: "/",
   },
   {
-    text: "Blog",
-    url: "/blog",
+    text: "News",
+    url: "/news",
   },
   {
-    text: "DaisyUI",
-    url: "/daisyui",
+    text: "Calendar",
+    url: "/Calendar",
   },
 ];

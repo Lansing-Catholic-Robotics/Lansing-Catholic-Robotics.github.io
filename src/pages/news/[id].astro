@@ -8,14 +8,14 @@ import Layout from '@layouts/Layout.astro';
 // getStaticPaths() tells Astro which URLs to generate at build time.
 // One page is built per non-draft blog post.
 export async function getStaticPaths() {
-  const posts = await getCollection('blog', ({ data }) => !data.draft);
-  return posts.map((post: CollectionEntry<'blog'>) => ({ params: { id: post.id }, props: { post } }));
+  const posts = await getCollection('news', ({ data }) => !data.draft);
+  return posts.map((post: CollectionEntry<'news'>) => ({ params: { id: post.id }, props: { post } }));
 }
 
-// Explicit props interface — CollectionEntry<'blog'> is the fully-typed
+// Explicit props interface — CollectionEntry<'News'> is the fully-typed
 // entry shape generated from the schema in src/content.config.ts.
 interface Props {
-  post: CollectionEntry<'blog'>;
+  post: CollectionEntry<'news'>;
 }
 
 const { post } = Astro.props;
@@ -26,7 +26,7 @@ const { Content } = await render(post);
   <Container class="py-12 sm:py-16 lg:py-24">
     <article class="max-w-3xl">
       <header class="space-y-4">
-        <a href="/blog" class="link link-hover text-sm text-base-content/60">← All posts</a>
+        <a href="/news" class="link link-hover text-sm text-base-content/60">← All posts</a>
 
       <!--
         heroImage is optional. Astro's <Image /> component optimizes the image

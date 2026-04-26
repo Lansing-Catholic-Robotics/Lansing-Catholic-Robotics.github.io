@@ -36,10 +36,10 @@ const seoFields = z.object({
 // Remove this collection if you don't need a blog.
 // ---------------------------------------------------------------------------
 
-const blog = defineCollection({
+const news = defineCollection({
   // glob() scans a directory and creates one entry per matched file.
   // The entry `id` is the filename without extension (e.g. "my-first-post").
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/news' }),
 
   schema: seoFields.extend({
     pubDate: z.coerce.date(),           // accepts ISO strings: "2024-01-15"
@@ -61,5 +61,5 @@ const blog = defineCollection({
 // ---------------------------------------------------------------------------
 
 export const collections = {
-  blog,
+  news,
 };
