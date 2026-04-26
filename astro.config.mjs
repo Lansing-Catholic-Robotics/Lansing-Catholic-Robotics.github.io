@@ -9,7 +9,7 @@ import alpinejs from "@astrojs/alpinejs";
 // https://astro.build/config
 export default defineConfig({
   // Keep `site` driven by validated env so sitemap and canonical URLs stay correct.
-  site: process.env.PUBLIC_SITE_URL ?? "https://example.com",
+  site: process.env.PUBLIC_SITE_URL ?? "https://Lansing-Catholic-Robotics.github.io",
   trailingSlash: "never",
   env: {
     schema: {
