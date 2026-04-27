@@ -45,6 +45,8 @@ const starterTraits = [
           <h1 class="max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">
             Cougar Claw Robotics
           </h1>
+          <img src="Logo_CougarClawRobotics_2026.jpg" alt="A bird sitting on a nest of eggs." />
+          
           <h3 class="max-w-2xl text-2xl font-base-content tracking-tight sm:text-lg">
           We are a robotics team from Lansing Catholic High School in Lansing, MI competing in the FIRST robotics competition. Our mission is to teach students to become better thinkers, problem solvers, and teammates. By living out "Gracious Professionalism" they learn to put others first, bringing them closer to God and better disciples of Jesus.
           </h3>
@@ -52,49 +54,10 @@ const starterTraits = [
         </div> 
 
         <!-- Full-width buttons on mobile are easier to tap and scan. -->
-        <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <a class="btn btn-primary w-full sm:w-auto" href="/blog">News</a>
-          <a class="btn btn-outline w-full sm:w-auto" href="/daisyui">Calendar</a>
-        </div>
+        
 
-        <ul class="grid gap-3 sm:grid-cols-2">
-          {starterTraits.map((trait) => (
-            <li class="rounded-box border border-base-300 bg-base-100 px-4 py-3 text-sm text-base-content/75 shadow-sm">
-              {trait}
-            </li>
-          ))}
-        </ul>
+        
       </div>
-
-      <aside class="card border border-base-300 bg-base-100 shadow-sm">
-        <div class="card-body gap-4">
-          <p class="text-sm font-semibold uppercase tracking-wide text-base-content/60">Quick start</p>
-          <div class="rounded-box border border-base-300 bg-base-200">
-            <div class="flex items-center justify-between gap-3 border-b border-base-300 px-4 py-3">
-              <div class="flex items-center gap-2 text-xs uppercase tracking-wide text-base-content/60">
-                <span class="h-2.5 w-2.5 rounded-full bg-success"></span>
-                <span>Command</span>
-              </div>
-              <button
-                type="button"
-                class="btn btn-xs btn-ghost"
-                data-copy-button
-                data-copy-target={quickstartId}
-              >
-                Copy
-              </button>
-            </div>
-            <pre class="overflow-x-auto px-4 py-4 text-sm leading-6"><code id={quickstartId}>{quickstart}</code></pre>
-          </div>
-          <p class="text-sm text-base-content/70">
-            Update `src/site-config.ts`, replace the sample content, and delete anything you do not need.
-          </p>
-          <div class="divider my-0"></div>
-          <p class="text-sm text-base-content/70">
-            The starter builds as a plain static Astro site by default, and you can add an adapter later if your deployment target needs one.
-          </p>
-        </div>
-      </aside>
     </section>
 
     <!-- Secondary information stays below the hero on mobile, then becomes a two-column grid. -->

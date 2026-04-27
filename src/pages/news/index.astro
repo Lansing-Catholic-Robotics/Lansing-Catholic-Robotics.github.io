@@ -22,7 +22,7 @@ const posts = (await getCollection('news', ({ data }) => !data.draft))
     <section class="mt-10 max-w-3xl">
       {posts.length === 0 && (
         <div class="alert alert-info">
-          <span>No posts yet. Add a Markdown file to <code>src/content/News/</code>.</span>
+          <span>No posts yet. Add a Markdown file to <code>src/content/news/</code>.</span>
         </div>
       )}
 
