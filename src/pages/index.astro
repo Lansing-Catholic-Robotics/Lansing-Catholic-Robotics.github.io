@@ -7,26 +7,7 @@ const quickstart = `pnpm create astro@latest --template ${siteConfig.githubRepo}
 const quickstartId = "quickstart-command";
 
 // Keep page content data-driven so the homepage stays easy to scan and edit.
-const defaults = [
-  "Astro 6 with Tailwind CSS 4 and DaisyUI 5",
-  "Typed blog content collection with Markdown and MDX support",
-  "SEO metadata, sitemap, robots.txt, and local SVG icons",
-  "Dark mode toggle, skip link, and reduced-motion support",
-];
 
-const principles = [
-  "DaisyUI is included on purpose as the default UI layer.",
-  "Alpine is only used for tiny progressive enhancement needs.",
-  "Examples are meant to be easy to delete, not hard to work around.",
-  "Any escape hatches stay secondary to the default starter story.",
-];
-
-const starterTraits = [
-  "Opinionated enough to be useful",
-  "Small enough to understand quickly",
-  "Ready for production work with low setup friction",
-  "Easy to customize without losing control",
-];
 ---
 
 <Layout
@@ -39,15 +20,15 @@ const starterTraits = [
       1. Start with a single-column stack that reads well on narrow screens.
       2. Introduce multi-column layouts only from `lg:` upward.
     -->
-    <section class="space-y-8 lg:grid lg:grid-cols-[minmax(0,1.2fr)_minmax(18rem,24rem)] lg:gap-10 lg:space-y-0">
-      <div class="space-y-6">
-        <div class="space-y-4">
-          <h1 class="max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">
+    <section class="space-y-64 lg:grid lg:grid-cols-[minmax(0,1.5fr)_minmax(1rem,24rem)] lg:gap-10 lg:space-y-0">
+      <div class="space-y-9">
+        <div class="space-y-9">
+          <h1 class="max-w-9xl text-9xl font-bold tracking-tight sm:text-9xl">
             Cougar Claw Robotics
           </h1>
           <img src="Logo_CougarClawRobotics_2026.jpg" alt="Team Logo" />
           
-          <h3 class="max-w-2xl text-2xl font-base-content tracking-tight sm:text-lg">
+          <h3 class="max-w-8xl text-8xl font-base-content tracking-tight sm:text-lg">
           We are a robotics team from Lansing Catholic High School in Lansing, MI competing in the FIRST robotics competition. Our mission is to teach students to become better thinkers, problem solvers, and teammates. By living out "Gracious Professionalism" they learn to put others first, bringing them closer to God and better disciples of Jesus.
           </h3>
         </div> 
@@ -58,36 +39,6 @@ const starterTraits = [
         
       </div>
     </section>
-
-    <!-- Secondary information stays below the hero on mobile, then becomes a two-column grid. -->
-    <section class="mt-10 grid gap-6 lg:mt-14 lg:grid-cols-2">
-      <div class="card border border-base-300 bg-base-100 shadow-sm">
-        <div class="card-body gap-4">
-          <h2 class="card-title">Included by default</h2>
-          <ul class="space-y-3 text-sm text-base-content/75 sm:text-base">
-            {defaults.map((item) => (
-              <li class="flex items-start gap-3">
-                <span class="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full bg-primary"></span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      <div class="card border border-base-300 bg-base-100 shadow-sm">
-        <div class="card-body gap-4">
-          <h2 class="card-title">Starter principles</h2>
-          <ul class="space-y-3 text-sm text-base-content/75 sm:text-base">
-            {principles.map((item) => (
-              <li class="flex items-start gap-3">
-                <span class="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full bg-secondary"></span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
     </section>
   </Container>
 </Layout>

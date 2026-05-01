@@ -1,0 +1,19 @@
+---
+import Container from "@components/elements/Container.astro";
+import Sectionhead from "@components/elements/Sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout title="Resources">
+  <Container class="py-12 sm:py-16 lg:py-24">
+    <Sectionhead align="center">
+      <Fragment slot="title">Resources</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+
+    <div class="mt-10 flex justify-center">
+      <a href="https://drive.google.com/drive/folders/1r24HGo07X08IVIZMCr0b-jkBaPdRj2X4?usp=drive_link" class="btn btn-primary">Team Drive</a>
+      <a href="https://drive.google.com/drive/folders/1hBy0STdOwyXrGyARZiLyGuId4sbyqFUJ?usp=drive_link" class="btn btn-primary">Photos/Videos</a>
+    </div>
+  </Container>
+</Layout>
