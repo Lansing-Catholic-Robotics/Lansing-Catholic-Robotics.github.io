@@ -1,7 +1,7 @@
 ---
 import { featureFlags, siteConfig } from 'site-config';
 import { Icon } from 'astro-icon/components'
-import Mindstorm from './elements/Mindstorm.astro';
+import FooterLabel from './elements/FooterLabel.astro';
 ---
 
 <footer class="my-20 px-20">
@@ -28,5 +28,5 @@ import Mindstorm from './elements/Mindstorm.astro';
   </div>
     
   </p>
-  {featureFlags.showAttribution && <Mindstorm />}
+  {featureFlags.showAttribution && <FooterLabel />}
 </footer>

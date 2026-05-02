@@ -5,11 +5,19 @@ import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout title="Sponsors">
-  <Container class="py-12 sm:py-16 lg:py-24">
-    <img src="sponsor logos/Repneu tool logo 2025.jpg" alt="Repneu Tool" />
-    <img src="sponsor logos/alro.jpg" alt="Alro Steel" />
-    <img src="sponsor logos/BaileyBrothersBannerHorizontal-1.png" alt="Bailey Brothers" />
-    <img src="sponsor logos/Cakes A Bloomin.jpg" alt="Cakes A Bloomin" />
-    <img src="sponsor logos/mpc logo 1.jpg" alt="MPC Cashway Lumber" />
+  <h1 class = "font-bold justify-self-center m-12 max-w-7xl text-7xl sm:text-3x1">
+      Sponsors    
+  </h1>
+  <Container class="py-12 sm:py-12 lg:py-24">
+    <div class="grid gap-4 sm:grid-cols-3 items-center">
+      <img src="sponsor logos/Repneu tool logo 2025.jpg" style = "w-full height = auto" alt="Repneu Tool" />
+      <img src="sponsor logos/alro.jpg" alt="Alro Steel" />
+      <img src="sponsor logos/BaileyBrothersBannerHorizontal-1.png" alt="Bailey Brothers" />
+    </div>
+    <div class="grid gap-4 sm:grid-cols-3 items-center">
+      <img src="sponsor logos/Cakes A Bloomin.jpg" alt="Cakes A Bloomin" />
+      <img src="sponsor logos/mpc logo 1.jpg" alt="MPC Cashway Lumber" />
+    </div>
+    
   </Container>
 </Layout>
