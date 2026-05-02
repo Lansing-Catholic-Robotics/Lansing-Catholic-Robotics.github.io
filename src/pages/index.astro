@@ -2,6 +2,9 @@
 import Container from "@components/elements/Container.astro";
 import Layout from "@layouts/Layout.astro";
 import { siteConfig } from "site-config";
+import FormPatterns from "@components/daisyui/FormPatterns.astro";
+import Contact from "@components/daisyui/Contact.astro";
+
 
 const quickstart = `pnpm create astro@latest --template ${siteConfig.githubRepo}`;
 const quickstartId = "quickstart-command";
@@ -23,7 +26,7 @@ const quickstartId = "quickstart-command";
     <section class="space-y-64 lg:grid lg:grid-cols-[minmax(0,1.5fr)_minmax(1rem,24rem)] lg:gap-10 lg:space-y-0">
       <div class="space-y-9">
         <div class="space-y-9">
-          <h1 class="max-w-9xl text-9xl font-bold tracking-tight sm:text-9xl">
+          <h1 class="max-w-7xl text-7xl font-bold tracking-tight sm:text-7xl">
             Cougar Claw Robotics
           </h1>
           <img src="Logo_CougarClawRobotics_2026.jpg" alt="Team Logo" />
@@ -34,7 +37,14 @@ const quickstartId = "quickstart-command";
         </div> 
 
         <!-- Full-width buttons on mobile are easier to tap and scan. -->
-        
+        <div class="space-y-9">
+        <h1 class="max-w-4xl text-4xl font-bold tracking-tight sm:text-4xl">
+            Contact<br>
+            robotics@lansingcatholic.org
+        </h1>
+        <Contact />
+
+        </div>
 
         
       </div>
