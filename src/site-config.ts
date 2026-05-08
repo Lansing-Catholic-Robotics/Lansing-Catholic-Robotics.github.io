@@ -1,5 +1,5 @@
 export const siteConfig = {
-  title: "Cougar Claw Robotics",
+  title: "Cougar Claw Robotics | FRC 11444",
   description: "Lansing Catholic High School Robotics",
   githubRepo: "Lansing-Catholic-Robotics/Lansing-Catholic-Robotics.github.io",
   // Astro validates these public env vars in astro.config.mjs.
