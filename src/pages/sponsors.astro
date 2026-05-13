@@ -2,14 +2,20 @@
 import Container from "@components/elements/Container.astro";
 import Sectionhead from "@components/elements/Sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
+import { Image } from 'astro:assets';
+import myImage from "../../public/sponsor logos/Repneu tool logo 2025.jpg"; // Image is 1600x900
 ---
+
+
+
 
 <Layout title="Sponsors">
   <h1 class = "font-bold justify-self-center m-12 max-w-7xl text-7xl sm:text-3x1">
       Sponsors    
   </h1>
   <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 items-center my-10">
-    <img src="sponsor logos/Repneu tool logo 2025.jpg" style = "width:80%; height:auto;" alt="Repneu Tool" class = "mx-auto"/>
+    <Image src={myImage} alt="A description of my image." />
+    <!---<img src="sponsor logos/Repneu tool logo 2025.jpg" style = "width:80%; height:auto;" alt="Repneu Tool" class = "mx-auto"/>-->
     <img src="sponsor logos/alro.jpg" alt="Alro Steel" style = "width:80%; height:auto;" class = "mx-auto" />
     <img src="sponsor logos/BaileyBrothersBannerHorizontal-1.png" alt="Bailey Brothers" style = "width:80%; height:auto;" class = "mx-auto" />
     <img src="sponsor logos/Cakes A Bloomin.jpg" alt="Cakes A Bloomin" style = "width:80%; height:auto;" class = "mx-auto" />
