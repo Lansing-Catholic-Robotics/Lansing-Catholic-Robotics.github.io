@@ -18,8 +18,17 @@ const { title = siteConfig.title, description, image } = Astro.props;
 ---
 
 <!doctype html>
+
 <html lang="de">
   <head>
+    <script>
+      document.addEventListener('astro:page-load', () => {
+      const saved = localStorage.getItem('theme');
+      if (saved) {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+      });
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/11444 Avatar.png" />
@@ -54,10 +63,11 @@ const { title = siteConfig.title, description, image } = Astro.props;
       (function () {
         const stored = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const theme = stored || (prefersDark ? 'dark' : 'light');
+        const theme = stored;
         document.documentElement.setAttribute('data-theme', theme);
       })();
     </script>
+    
   </head>
   <body>
     <!-- Skip-to-content: first focusable element on the page.

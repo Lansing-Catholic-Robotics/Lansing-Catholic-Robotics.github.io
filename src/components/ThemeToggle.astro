@@ -16,7 +16,7 @@
 
 <button
   x-data="{
-    theme: document.documentElement.getAttribute('data-theme') || 'light',
+    theme: localStorage.getItem('theme') ,
     toggle() {
       this.theme = this.theme === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', this.theme);
