@@ -45,6 +45,11 @@ export const nav = [
   {
     text: "Sponsors",
     url: "/sponsors",
+  },
+
+  {
+    text: "Seasons",
+    url: "/seasons",
   }
 
 ];

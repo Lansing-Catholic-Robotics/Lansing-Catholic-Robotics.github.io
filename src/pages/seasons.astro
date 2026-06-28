@@ -1,0 +1,24 @@
+---
+import Container from "@components/elements/Container.astro";
+import Sectionhead from "@components/elements/Sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+---
+
+
+
+
+<Layout title="Seasons">
+  <h1 class = "font-bold justify-self-center m-12 max-w-7xl text-7xl sm:text-3x1">
+      Seasons    
+  </h1>
+  <div class="grid gap-6 xl:grid-cols-[18rem_minmax(0,1fr)]">
+    <aside class="card border border-base-300 bg-base-100 shadow-sm">
+      <div class="card-body">
+        <ul class="menu rounded-box bg-base-200">
+          <li><a>2026</a></li>
+        </ul>
+      </div>
+    </aside>
+    <img src="https://cougarclawrobotics.com/2026-Robot.png" style = "width:80%; height:auto;" alt="2026 Robot" class = "mx-auto"/>
+  </div>
+</Layout>
